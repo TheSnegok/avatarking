@@ -90,9 +90,42 @@ const App = () => {
 						d="M380,250 250,120 120,250 250,380z"
 						className="rect"
 					/>
-					<path d={createPolygonInCircle(250, 250, 115, 4, true)} className="rectInRect" />
-					<path d={createPolygonInCircle(250, 250, 115, 3, true)} className="rectInRect" />
-					<path d={createPolygonInCircle(250, 250, 115, 3)} className="rectInRect" />
+					<path
+						d="M250.0,365.0 135.0,250.0 250.0,135.0 365.0,250.0 z"
+						className="rectInRect"
+					/>
+					<path
+						d="M332.3,202.5 167.7,202.5 250.0,345.0 z"
+						className="rectInRect"
+					/>
+					<path
+						d="M332.3,202.5 167.7,202.5 250.0,345.0 z"
+						style={{
+							transform: "rotate(180deg)",
+							transformOrigin: "center",
+						}}
+						className="rectInRect"
+					/>
+					<path
+						d="M289.0,227.5 211.0,227.5 250.0,295.0 z"
+						className="rectInRect"
+					/>
+					<circle
+						r="40"
+						cx="250"
+						cy="250"
+						fill="none"
+						stroke="rgba(0,0,0,0.5)"
+						strokeWidth="3px"
+					/>
+					<circle
+						r="5"
+						cx="250"
+						cy="250"
+						fill="none"
+						stroke="rgba(0,0,0,0.5)"
+						strokeWidth="3px"
+					/>
 				</svg>
 				<div className="loadingText">
 					<div>Loading</div>
