@@ -126,6 +126,7 @@ const App = () => {
 						stroke="rgba(0,0,0,0.5)"
 						strokeWidth="3px"
 					/>
+					<line  x1="270" y1="270" x2="250" y2="250" stroke="rgba(0,0,0,0.5)"  />
 				</svg>
 				<div className="loadingText">
 					<div>Loading</div>
