@@ -126,31 +126,58 @@ const App = () => {
 						stroke="rgba(0,0,0,0.5)"
 						strokeWidth="3px"
 					/>
-
+					<g>
+						<line
+							x1="245"
+							y1="291"
+							x2="250"
+							y2="345"
+							stroke="rgba(256,256,256,0.5)"
+							className="bottomLinesLeft"
+						/>
+						<line
+							x1="250"
+							y1="291"
+							x2="250"
+							y2="345"
+							stroke="rgba(256,256,256,0.5)"
+							className="bottomLinesCentral"
+						/>
+						<line
+							x1="255"
+							y1="291"
+							x2="250"
+							y2="345"
+							stroke="rgba(256,256,256,0.5)"
+							className="bottomLinesRight"
+						/>
+					</g>
+					<g>
 					<line
-						x1="250"
-						y1="290"
-						x2="250"
-						y2="345"
+						x1="332.3"
+						y1="202.5"
+						x2="289"
+						y2="227.5"
 						stroke="rgba(256,256,256,0.5)"
 						className="bottomLinesLeft"
 					/>
 					<line
-						x1="250"
-						y1="290"
-						x2="250"
-						y2="345"
+						x1="332.3"
+						y1="202.5"
+						x2="287"
+						y2="225.5"
 						stroke="rgba(256,256,256,0.5)"
 						className="bottomLinesCentral"
 					/>
 					<line
-						x1="250"
-						y1="290"
-						x2="250"
-						y2="345"
+						x1="332.3"
+						y1="202.5"
+						x2="289"
+						y2="227.5"
 						stroke="rgba(256,256,256,0.5)"
 						className="bottomLinesRight"
 					/>
+					</g>
 				</svg>
 				<div className="loadingText">
 					<div>Loading</div>
