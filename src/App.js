@@ -126,7 +126,31 @@ const App = () => {
 						stroke="rgba(0,0,0,0.5)"
 						strokeWidth="3px"
 					/>
-					<line  x1="270" y1="270" x2="250" y2="250" stroke="rgba(0,0,0,0.5)"  />
+
+					<line
+						x1="250"
+						y1="290"
+						x2="250"
+						y2="345"
+						stroke="rgba(256,256,256,0.5)"
+						className="bottomLinesLeft"
+					/>
+					<line
+						x1="250"
+						y1="290"
+						x2="250"
+						y2="345"
+						stroke="rgba(256,256,256,0.5)"
+						className="bottomLinesCentral"
+					/>
+					<line
+						x1="250"
+						y1="290"
+						x2="250"
+						y2="345"
+						stroke="rgba(256,256,256,0.5)"
+						className="bottomLinesRight"
+					/>
 				</svg>
 				<div className="loadingText">
 					<div>Loading</div>
