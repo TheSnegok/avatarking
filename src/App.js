@@ -156,24 +156,24 @@ const App = () => {
 					<line
 						x1="332.3"
 						y1="202.5"
-						x2="289"
-						y2="227.5"
+						x2="284"
+						y2="224.5"
 						stroke="rgba(256,256,256,0.5)"
 						className="bottomLinesLeft"
 					/>
 					<line
 						x1="332.3"
 						y1="202.5"
-						x2="287"
-						y2="225.5"
+						x2="286"
+						y2="228.5"
 						stroke="rgba(256,256,256,0.5)"
 						className="bottomLinesCentral"
 					/>
 					<line
 						x1="332.3"
 						y1="202.5"
-						x2="289"
-						y2="227.5"
+						x2="288"
+						y2="232.5"
 						stroke="rgba(256,256,256,0.5)"
 						className="bottomLinesRight"
 					/>
