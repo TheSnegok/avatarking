@@ -47,7 +47,7 @@ const App = () => {
 		from: { transform: `rotate(0deg)` },
 		to: { transform: `rotate(360deg)` },
 		config: { duration: 6000 },
-		loop: false,
+		loop: true,
 	});
 
 	const { number } = useSpring({
@@ -95,27 +95,172 @@ const App = () => {
 						className="rectInRect"
 					/>
 					<path
-						d="M332.3,202.5 167.7,202.5 250.0,345.0 z"
-						className="rectInRect"
-					/>
-					<path
-						d="M332.3,202.5 167.7,202.5 250.0,345.0 z"
-						style={{
-							transform: "rotate(180deg)",
-							transformOrigin: "center",
-						}}
-						className="rectInRect"
-					/>
-					<path
 						d="M289.0,227.5 211.0,227.5 250.0,295.0 z"
 						className="rectInRect"
 					/>
+					<g id="rectWithArrow">
+						<path
+							d="M332.3,202.5 167.7,202.5 250.0,345.0 z"
+							className="rectInRect"
+						/>
+						<g>
+							<line
+								x1="245"
+								y1="291"
+								x2="250"
+								y2="345"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesLeft"
+							/>
+							<line
+								x1="250"
+								y1="291"
+								x2="250"
+								y2="345"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesCentral"
+							/>
+							<line
+								x1="255"
+								y1="291"
+								x2="250"
+								y2="345"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesRight"
+							/>
+						</g>
+						<g>
+							<line
+								x1="332.3"
+								y1="202.5"
+								x2="284"
+								y2="224.5"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesLeft"
+							/>
+							<line
+								x1="332.3"
+								y1="202.5"
+								x2="167.7"
+								y2="298"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesCentral"
+							/>
+							<line
+								x1="332.3"
+								y1="202.5"
+								x2="288"
+								y2="232.5"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesRight"
+							/>
+						</g>
+						<g>
+							<line
+								x1="167.7"
+								y1="202.5"
+								x2="216"
+								y2="225.5"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesCentral"
+							/>
+							<line
+								x1="167.7"
+								y1="202.5"
+								x2="212"
+								y2="233.5"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesRight"
+							/>
+						</g>
+					</g>
+					<g
+						style={{
+							transformOrigin: "center",
+							transform: "rotateZ(180deg)",
+						}}
+					>
+						<path
+							d="M332.3,202.5 167.7,202.5 250.0,345.0 z"
+							className="rectInRect"
+						/>
+						<g>
+							<line
+								x1="245"
+								y1="291"
+								x2="250"
+								y2="345"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesLeft"
+							/>
+							<line
+								x1="250"
+								y1="291"
+								x2="250"
+								y2="345"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesCentral"
+							/>
+							<line
+								x1="255"
+								y1="291"
+								x2="250"
+								y2="345"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesRight"
+							/>
+						</g>
+						<g>
+							<line
+								x1="332.3"
+								y1="202.5"
+								x2="284"
+								y2="224.5"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesLeft"
+							/>
+							<line
+								x1="332.3"
+								y1="202.5"
+								x2="288"
+								y2="232.5"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesRight"
+							/>
+						</g>
+						<g>
+							<line
+								x1="167.7"
+								y1="202.5"
+								x2="332.3"
+								y2="298"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesLeft"
+							/>
+							<line
+								x1="167.7"
+								y1="202.5"
+								x2="216"
+								y2="225.5"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesCentral"
+							/>
+							<line
+								x1="167.7"
+								y1="202.5"
+								x2="212"
+								y2="233.5"
+								stroke="rgba(256,256,256,0.5)"
+								className="bottomLinesRight"
+							/>
+						</g>
+					</g>
 					<circle
 						r="40"
 						cx="250"
 						cy="250"
 						fill="none"
-						stroke="rgba(0,0,0,0.5)"
+						stroke="rgba(0,0,0,0.6)"
 						strokeWidth="3px"
 					/>
 					<circle
@@ -123,61 +268,9 @@ const App = () => {
 						cx="250"
 						cy="250"
 						fill="none"
-						stroke="rgba(0,0,0,0.5)"
+						stroke="rgba(0,0,0,0.6)"
 						strokeWidth="3px"
 					/>
-					<g>
-						<line
-							x1="245"
-							y1="291"
-							x2="250"
-							y2="345"
-							stroke="rgba(256,256,256,0.5)"
-							className="bottomLinesLeft"
-						/>
-						<line
-							x1="250"
-							y1="291"
-							x2="250"
-							y2="345"
-							stroke="rgba(256,256,256,0.5)"
-							className="bottomLinesCentral"
-						/>
-						<line
-							x1="255"
-							y1="291"
-							x2="250"
-							y2="345"
-							stroke="rgba(256,256,256,0.5)"
-							className="bottomLinesRight"
-						/>
-					</g>
-					<g>
-					<line
-						x1="332.3"
-						y1="202.5"
-						x2="284"
-						y2="224.5"
-						stroke="rgba(256,256,256,0.5)"
-						className="bottomLinesLeft"
-					/>
-					<line
-						x1="332.3"
-						y1="202.5"
-						x2="286"
-						y2="228.5"
-						stroke="rgba(256,256,256,0.5)"
-						className="bottomLinesCentral"
-					/>
-					<line
-						x1="332.3"
-						y1="202.5"
-						x2="288"
-						y2="232.5"
-						stroke="rgba(256,256,256,0.5)"
-						className="bottomLinesRight"
-					/>
-					</g>
 				</svg>
 				<div className="loadingText">
 					<div>Loading</div>
