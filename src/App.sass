@@ -28,9 +28,9 @@
 
 .loading
 	position: absolute
-	top: 350px
+	top: 20px
 	left: 50%
-	transform: translate(-50%, -50%)
+	transform: translateX(-50%)
 	z-index: 5
 	width: 500px
 	height: 500px
@@ -84,6 +84,7 @@
 				stroke: rgba(255, 199, 118, .2)
 				stroke-width: 2px
 				stroke-dasharray: 2 5
+				animation: wheelRight 3s infinite
 		.hexagon
 			position: relative
 			transform-origin: center
@@ -116,3 +117,23 @@
 			display: flex
 			justify-content: center
 			align-items: center
+
+hr:first-child
+	position: absolute
+	top: 350px
+	left: 50%
+	transform: translateX(calc(-50% - 350px))
+	width: 30vw
+
+hr:nth-child(2)
+	position: absolute
+	top: 350px
+	left: 50%
+	transform: translateX(-50%)
+	width: 30vw
+
+@keyframes wheelRight
+	0%
+		transform: rotateX(0deg)
+	100%
+		transform: rotateX(180deg)

@@ -260,7 +260,7 @@ const App = () => {
 						cx="250"
 						cy="250"
 						fill="none"
-						stroke="rgba(0,0,0,0.6)"
+						stroke="rgba(80,80,80,0.6)"
 						strokeWidth="3px"
 					/>
 					<circle
